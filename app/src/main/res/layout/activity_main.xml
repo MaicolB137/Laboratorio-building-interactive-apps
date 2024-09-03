@@ -11,17 +11,19 @@
         android:id="@+id/spinner"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="60dp"
         android:layout_gravity="center"
-        android:layout_marginBottom="16dp" />
-
+        android:layout_marginTop="80dp"
+        android:layout_marginBottom="40dp"
+        android:entries="@array/lista_proyectos"
+        />
     <Button
-        android:id="@+id/button4"
+        android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_margin="16dp"
-        android:text="Button" />
+        android:text="@string/proyectos_ofertados"
+        android:onClick="onClickProyecto" />
 
     <TextView
         android:id="@+id/textView"
@@ -29,7 +31,6 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_margin="16dp"
-        android:text="Vacio" />
-
-
+        android:text="@string/sin_proyecto"
+        />
 </LinearLayout>
